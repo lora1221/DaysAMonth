@@ -12,6 +12,7 @@
     <script>
         function daysAMonth() {
             var month = parseFloat(document.getElementById("txtDays").value);
+            var output = document.getElementById("output");
             switch(month) {
                 case 1:
                 case 3:
@@ -20,13 +21,13 @@
                 case 8:
                 case 10:
                 case 12:
-                    document.getElementById("output").innerHTML = "Thang "+month+ " co 31 ngay";
+                    output.innerHTML = "Thang "+month+ " co 31 ngay";
                     break;
                 case 2:
-                    document.getElementById("output").innerHTML = "Thang 2 co 28 hoac 29 ngay";
+                    output.innerHTML = "Thang 2 co 28 hoac 29 ngay";
                     break;
                 default:
-                    document.getElementById("output").innerHTML = "Thang "+month+ " co 30 ngay";
+                    output.innerHTML = "Thang "+month+ " co 30 ngay";
                     break;
             }
         }
